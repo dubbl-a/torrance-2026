@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Torrance Watch</title>
+<meta http-equiv="refresh" content="0; url=https://torrancewatch.org/">
+<link rel="canonical" href="https://torrancewatch.org/">
+<script>
+(function() {
+  var path = window.location.pathname
+    .replace(/^\/torrance-2026\/?/, '/')
+    .replace(/^\/torrance-watch\/?/, '/');
+
+  var legacyMap = {
+    '/': '/',
+    '/index.html': '/finance/2026/mayor-2026/',
+    '/kaji_2026.html': '/finance/2026/district-1-2026/',
+    '/mattucci_2026.html': '/finance/2026/treasurer-2026/'
+  };
+
+  var destination = legacyMap[path] !== undefined ? legacyMap[path] : '/';
+  window.location.replace('https://torrancewatch.org' + destination + window.location.search);
+})();
+</script>
+</head>
+<body>
+<p>Redirecting to <a href="https://torrancewatch.org/">torrancewatch.org</a>…</p>
+</body>
+</html>
